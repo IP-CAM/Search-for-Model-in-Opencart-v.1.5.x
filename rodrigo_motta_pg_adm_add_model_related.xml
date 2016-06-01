@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+      <id>Busca Produtos Relacionados por Modelo</id>
+      <version>1.5.x</version>
+      <vqmver>2.4.0</vqmver>
+      <author>Rodrigo Motta - www.rodrigomotta.info</author>
+
+      <file name="admin/view/template/catalog/product_form.tpl">
+            <operation error="log">
+                  <search position="replace" offset="5"><![CDATA[url: 'index.php?route=catalog/product/autocomplete&token=<?php echo $token; ?>&filter_name=' +  encodeURIComponent(request.term),]]>
+                  </search>
+                  <add><![CDATA[url: 'index.php?route=catalog/product/autocomplete&token=<?php echo $token; ?>&filter_model=' +  encodeURIComponent(request.term),
+			dataType: 'json',
+			success: function(json) {		
+				response($.map(json, function(item) {
+					return {
+						label: item.model,]]>
+                  </add>
+            </operation>
+      </file>
+</modification>
