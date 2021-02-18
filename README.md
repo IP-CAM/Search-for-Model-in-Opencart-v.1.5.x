@@ -1,4 +1,4 @@
-# opencart-busca-por-modelo
-Busca Produtos Relacionados por Modelo Modificação feita para buscar os produtos em "Ligações > Produtos Relacionados" por "Modelo" e não mais por nome. Feito em VQMod, então nao vai alterar os arquivos de sua loja.
+# opencart-search-for-model
+Search Related Products by Model Modification made to search for products in "Links> Related Products" by "Model" and no longer by name. Made in VQMod, then it will not alter your store's files.
 
-<a href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=suportefloripa" class="url" rel="nofollow me">OpenCart (Minhas Extensions)</a>
+<a href="https://www.opencart.com/index.php?route=marketplace/extension&filter_member=supportfloripa" class="url" rel="nofollow me"> OpenCart (My Extensions) </a> 
